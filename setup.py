@@ -5,7 +5,7 @@
 #
 
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 VERSION = "0.0.1"
 
@@ -15,11 +15,15 @@ def get_requirements():
     return reqs
 
 
-if __name__ == "__main__":
-    setup(
-        name="jepa",
-        version=VERSION,
-        description="JEPA research code.",
-        python_requires=">=3.9",
-        install_requires=get_requirements(),
-    )
+
+setup(
+    name="vjepa",
+    version=VERSION,
+    description="JEPA research code.",
+    python_requires=">=3.9",
+    install_requires=get_requirements(),
+    package_dir={"": "src"},
+    packages=find_packages("src"),
+    package_data={"ctrlv": ["py.typed"]},
+    include_package_data=True,
+)
