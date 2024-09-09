@@ -11,13 +11,13 @@ from functools import partial
 import torch
 import torch.nn as nn
 
-from src.models.utils.modules import Block
-from src.models.utils.pos_embs import get_2d_sincos_pos_embed, get_3d_sincos_pos_embed
-from src.utils.tensors import (
+from vjepa.models.utils.modules import Block
+from vjepa.models.utils.pos_embs import get_2d_sincos_pos_embed, get_3d_sincos_pos_embed
+from vjepa.utils.tensors import (
     trunc_normal_,
     repeat_interleave_batch
 )
-from src.masks.utils import apply_masks
+from vjepa.masks.utils import apply_masks
 
 
 class VisionTransformerPredictor(nn.Module):

@@ -24,6 +24,6 @@ setup(
     install_requires=get_requirements(),
     package_dir={"": "src"},
     packages=find_packages("src"),
-    package_data={"ctrlv": ["py.typed"]},
+    package_data={"vjepa": ["py.typed"]},
     include_package_data=True,
 )
