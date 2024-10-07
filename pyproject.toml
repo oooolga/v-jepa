@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vjepa"
-version = "0.1.0"
+version = "0.1.2"
 description = "Moedified from the official PyTorch codebase for the video joint-embedding predictive architecture, V-JEPA, a method for self-supervised learning of visual representations from video."
 authors = ["Adrien Bardes <abardes@meta.com>"]
 readme = "README.md"
@@ -17,7 +17,7 @@ braceexpand = "^0.1.7"
 webdataset = "^0.2.100"
 timm = "^1.0.9"
 decord = "^0.6.0"
-pandas = "^2.2.3"
+pandas = "2.2.2"
 einops = "^0.8.0"
 beartype = "^0.19.0"
 
